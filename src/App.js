@@ -15,6 +15,8 @@ function App() {
       {/* <div className="right">
         <Rightbar />
       </div> */}
+
+      <Rightbar />
     </div>
   );
 }
