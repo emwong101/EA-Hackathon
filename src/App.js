@@ -1,11 +1,9 @@
 import "./App.scss";
-import Header from "./components/header/Header";
-import SingleGameHero from "./components/singleGameHero/SingleGameHero";
 import Main from "./pages/home/main";
-import GameOverview from "./components/gameOverview/GameOverview";
 import Rightbar from "./components/rightbar/Rightbar";
 import { Nav } from "./components/nav/Nav";
 import Game from "./pages/game/Game";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -14,8 +12,10 @@ function App() {
         <Nav />
       </div>
       <div className="middle">
-        <Main />
-        <Game />
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/FIFA" element={<Game />} />
+        </Routes>
       </div>
       <div className="right">
         <Rightbar />
