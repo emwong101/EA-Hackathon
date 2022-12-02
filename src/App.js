@@ -5,11 +5,12 @@ import Main from "./pages/home/main";
 import Rightbar from "./components/rightbar/Rightbar";
 import { Nav } from "./components/nav/Nav";
 import { WishListHeader } from "./components/wishlistHeader/WishListHeader";
+import WishListCard from "./components/wishlistCard/WishListCard";
 
 function App() {
-	return (
-		<div className="App">
-			{/* <div className="left">
+  return (
+    <div className="App">
+      {/* <div className="left">
 				<Nav />
 			</div>
 			<div className="middle">
@@ -18,9 +19,10 @@ function App() {
 			<div className="right">
 				<Rightbar />
 			</div> */}
-			<WishListHeader />
-		</div>
-	);
+      <WishListHeader />
+      <WishListCard />
+    </div>
+  );
 }
 
 export default App;
