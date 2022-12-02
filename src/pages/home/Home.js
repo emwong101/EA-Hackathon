@@ -1,7 +1,7 @@
 import React from "react";
-import { GameList } from "../../component/gameList/GameList.js";
-import { Nav } from "../../component/nav/Nav.js";
-import { Link } from "react-router-dom";
+import { GameList } from "../../components/gameList/GameList.js";
+import { Nav } from "../../components/nav/Nav.js.js";
+// import { Link } from "react-router-dom";
 import sims from "../../assets/games/sims.svg";
 import game1 from "../../assets/games/game1.png";
 import game2 from "../../assets/games/game2.png";
