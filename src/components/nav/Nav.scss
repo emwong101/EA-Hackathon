@@ -14,8 +14,11 @@
 		width: auto;
 		padding: 1rem;
 
-		:hover {
+		&:hover {
+			cursor: pointer;
 			background-color: #343647;
+			transform: scale(105%);
+			transition: ease-in-out 0.3s;
 		}
 	}
 

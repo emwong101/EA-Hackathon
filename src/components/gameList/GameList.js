@@ -11,7 +11,7 @@ export const GameList = ({ img, title, price, discount }) => {
 			/>
 			<span className="game-list_title">{title}</span>
 			<div>
-				<span className="game-list_discount">{discount}</span>
+				{discount && <span className="game-list_discount">{discount}</span>}
 				<span className="game-list_price">{price}</span>
 			</div>
 		</section>

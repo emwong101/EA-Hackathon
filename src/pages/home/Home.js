@@ -1,11 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { GameList } from "../../components/gameList/GameList.js";
-import { Nav } from "../../components/nav/Nav.js.js";
 // import { Link } from "react-router-dom";
 import sims from "../../assets/games/sims.svg";
-import game1 from "../../assets/games/game1.png";
-import game2 from "../../assets/games/game2.png";
-import game3 from "../../assets/games/game3.png";
 import game4 from "../../assets/games/game4.png";
 import game5 from "../../assets/games/game5.png";
 import game6 from "../../assets/games/game6.png";
@@ -27,12 +23,26 @@ import game21 from "../../assets/games/game21.png";
 import game22 from "../../assets/games/game22.png";
 import game23 from "../../assets/games/game23.png";
 import game24 from "../../assets/games/game24.png";
+// import WishList from "../../assets/wishList.svg";
+// import WishListRed from "../../assets/wishListRed.svg";
 import "./Home.scss";
 
-export const Home = () => {
+export const Hero = () => {
+	const [isFavorite, setIsFavorite] = useState(false);
+
+	const handleFavoriteClick = () => {
+		setIsFavorite((prev) => !prev);
+	};
+
+	let imgURL = "";
+	if (isFavorite) {
+		imgURL = "wishListRed.svg";
+	} else {
+		imgURL = "wishList.svg";
+	}
+
 	return (
 		<div className="home-box">
-			<Nav />
 			<main className="main">
 				<div className="game-top">
 					<h3 className="game-title">Top Games</h3>
@@ -43,38 +53,40 @@ export const Home = () => {
 					<GameList
 						img={sims}
 						title={"The Sims 4"}
-						discount={""}
 						price={"Free"}
 					/>
 					<GameList
-						header={"Classics"}
 						img={game16}
 						title={"Need for Speed Unbound"}
-						discount={""}
 						price={"&89.99"}
 					/>
 					<GameList
-						header={"Action"}
 						img={game4}
 						title={"Madden NFL 23"}
 						discount={"-50%"}
 						price={"$39.99"}
 					/>
 					<GameList
-						header={"Sports & racing"}
 						img={game5}
 						title={"It takes Two"}
 						discount={"-60%"}
 						price={"$21.99"}
 					/>
 					{/* <Link to="/FIFA"> */}
-					<GameList
-						header={"Old but good"}
-						img={game6}
-						title={"FIFA 23"}
-						discount={"-40%"}
-						price={"$53.99"}
-					/>
+					<div className="fifa-box">
+						<GameList
+							img={game6}
+							title={"FIFA 23"}
+							discount={"-40%"}
+							price={"$53.99"}
+						/>
+						<img
+							className="wishlist-icon"
+							src={imgURL}
+							alt="wishList"
+							onClick={handleFavoriteClick}
+						/>
+					</div>
 					{/* </Link> */}
 				</div>
 				<div className="game-top">
@@ -92,7 +104,6 @@ export const Home = () => {
 					<GameList
 						img={game9}
 						title={"The Sims 4"}
-						discount={""}
 						price={"Free"}
 					/>
 					<GameList
@@ -123,7 +134,6 @@ export const Home = () => {
 					<GameList
 						img={game17}
 						title={"STAR WARS Squadrons"}
-						discount={""}
 						price={"$54.99"}
 					/>
 					<GameList
@@ -160,13 +170,11 @@ export const Home = () => {
 					<GameList
 						img={game16}
 						title={"Need for Speed Unbound"}
-						discount={""}
 						price={"$89.99"}
 					/>
 					<GameList
 						img={game13}
 						title={"Need for Speed payback"}
-						discount={""}
 						price={"&89.99"}
 					/>
 					<GameList
@@ -197,14 +205,12 @@ export const Home = () => {
 					<GameList
 						img={game21}
 						title={"The Sims 4"}
-						discount={""}
 						price={"Free"}
 					/>
 					<GameList
 						header={"Classics"}
 						img={game22}
 						title={"Need for Speed Unbound"}
-						discount={""}
 						price={"&89.99"}
 					/>
 					<GameList
@@ -223,7 +229,7 @@ export const Home = () => {
 					/>
 					<GameList
 						header={"Old but good"}
-						img={game5}
+						img={game10}
 						title={"FIFA 23"}
 						discount={"-40%"}
 						price={"$53.99"}
