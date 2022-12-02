@@ -12,9 +12,9 @@ function App() {
         <Header />
         <SingleGameHero />
       </div>
-      <div className="right">
+      {/* <div className="right">
         <Rightbar />
-      </div>
+      </div> */}
     </div>
   );
 }
