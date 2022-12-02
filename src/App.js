@@ -1,24 +1,25 @@
-import "./App.scss";
-import Header from "./components/header/Header";
-import SingleGameHero from "./components/singleGameHero/SingleGameHero";
-import Main from "./pages/home/main";
-import Rightbar from "./components/rightbar/Rightbar";
-import { Nav } from "./components/nav/Nav";
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
-	return (
-		<div className="App">
-			<div className="left">
-				<Nav />
-			</div>
-			<div className="middle">
-				<Main />
-			</div>
-			<div className="right">
-				<Rightbar />
-			</div>
-		</div>
-	);
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
 }
 
 export default App;
