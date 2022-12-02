@@ -1,14 +1,31 @@
 .nav {
 	&-box {
+		background: #171a29;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		height: 100vh;
-		background-color: darkblue;
 		color: white;
+	}
+
+	&-item {
+		display: flex;
+		align-items: center;
+		width: auto;
+		padding: 1rem;
+
+		:hover {
+			background-color: #343647;
+		}
 	}
 
 	&-text {
 		font-size: 14px;
+		padding-left: 1rem;
+	}
+
+	&-img {
+		width: 16px;
+		height: 16px;
 	}
 }
