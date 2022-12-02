@@ -16,7 +16,7 @@ export const GameList = ({ img, title, price, discount }) => {
 				className="game-list_img"
 			/>
 			<div
-				className={`like ${isFavorite ? "red" : ""}`}
+				className={`like ${isFavorite ? "on" : ""}`}
 				onClick={handleFavoriteClick}
 			></div>
 			<span className="game-list_title">{title}</span>
