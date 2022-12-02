@@ -4,21 +4,25 @@
 	padding: 1rem;
 	cursor: pointer;
 	position: relative;
+	font-family: Verdana, sans-serif;
 
 	&_title {
-		font-size: 14px;
+		font-size: 11px;
 		width: 12rem;
+		font-weight: 700;
 	}
 
 	&_price {
 		font-size: 11px;
+		font-weight: 700;
 	}
 
 	&_discount {
-		font-size: 11px;
+		font-weight: 400;
+		font-size: 9px;
 		background-color: #00ff84;
 		border-radius: 20px;
-		padding: 0.1rem 0.2rem;
+		padding: 0.125rem 0.4375rem;
 		margin-right: 0.3rem;
 		color: black;
 	}
@@ -56,7 +60,7 @@
 	}
 }
 
-.red {
+.on {
 	mask: url(../../assets/heart-solid.svg) no-repeat;
-	background-color: red;
+	background-color: white;
 }
