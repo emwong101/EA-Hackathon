@@ -1,0 +1,108 @@
+.box {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 1rem;
+	color: white;
+	background-color: #1d2033;
+}
+
+.icons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.icons-left {
+	display: flex;
+}
+
+.chev {
+	margin-left: 0.5rem;
+}
+
+.input {
+	margin-left: 1rem;
+	width: 250px;
+	border-radius: 5px;
+	border: none;
+	padding: 0.2rem 1rem;
+	padding-left: 1.7rem;
+
+	&::placeholder {
+		font-size: 11px;
+		color: gray;
+	}
+}
+
+.button {
+	border: 1px solid #276afc;
+	font-size: 8px;
+	padding: 0 0.5rem;
+	border-radius: 5px;
+	line-height: 1rem;
+	text-align: center;
+}
+
+.header {
+	padding-bottom: 1rem;
+}
+
+.box-top {
+	border-bottom: 1px solid gray;
+}
+
+.box-bottom {
+	display: flex;
+	flex-direction: column;
+}
+
+.bottom-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 4.4375rem;
+}
+
+.sorts {
+	display: flex;
+	font-size: 11px;
+	font-family: Helvetica, sans-serif;
+	font-weight: 400;
+}
+
+.sorts-text {
+	margin-right: 1rem;
+}
+
+.border {
+	border-bottom: 1px solid grey;
+}
+
+.bottom-bottom {
+	margin-top: 0.5rem;
+	font-size: 11px;
+	font-family: Helvetica, sans-serif;
+	font-weight: 400;
+}
+
+.save {
+	padding: 0.4063rem 0.75rem;
+	background-color: #276afc;
+	border-radius: 5px;
+	margin-right: 1rem;
+}
+
+.input-box {
+	position: relative;
+	text-align: center;
+}
+
+.search {
+	width: 11px;
+	height: 12px;
+	// color: #96959d;
+	position: absolute;
+	top: 10px;
+	left: 20px;
+}
