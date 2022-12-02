@@ -1,10 +1,9 @@
 import "./App.scss";
 import Header from "./components/header/Header";
 import SingleGameHero from "./components/singleGameHero/SingleGameHero";
+import Main from "./pages/home/main";
 import Rightbar from "./components/rightbar/Rightbar";
-
 import { Nav } from "./components/nav/Nav";
-import { Hero } from "./pages/home/Home";
 
 function App() {
 	return (
@@ -13,9 +12,7 @@ function App() {
 				<Nav />
 			</div>
 			<div className="middle">
-				<Header />
-				<SingleGameHero />
-				<Hero />
+				<Main />
 			</div>
 			<div className="right">
 				<Rightbar />

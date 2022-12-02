@@ -27,20 +27,7 @@ import game24 from "../../assets/games/game24.png";
 // import WishListRed from "../../assets/wishListRed.svg";
 import "./Home.scss";
 
-export const Hero = () => {
-	const [isFavorite, setIsFavorite] = useState(false);
-
-	const handleFavoriteClick = () => {
-		setIsFavorite((prev) => !prev);
-	};
-
-	let imgURL = "";
-	if (isFavorite) {
-		imgURL = "wishListRed.svg";
-	} else {
-		imgURL = "wishList.svg";
-	}
-
+export const Home = () => {
 	return (
 		<div className="home-box">
 			<main className="main">
@@ -79,12 +66,6 @@ export const Hero = () => {
 							title={"FIFA 23"}
 							discount={"-40%"}
 							price={"$53.99"}
-						/>
-						<img
-							className="wishlist-icon"
-							src={imgURL}
-							alt="wishList"
-							onClick={handleFavoriteClick}
 						/>
 					</div>
 					{/* </Link> */}

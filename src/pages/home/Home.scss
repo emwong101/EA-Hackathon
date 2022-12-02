@@ -1,11 +1,18 @@
 .main {
 	background-color: #1d2033;
 	padding: 2rem;
+	flex-shrink: 2;
 }
 
 .home-box {
 	display: flex;
 	color: #fefefe;
+}
+
+.game-top {
+	width: 100%;
+	text-align: start;
+	padding: 0 1rem;
 }
 
 .game-bottom {
