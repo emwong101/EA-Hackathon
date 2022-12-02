@@ -1,0 +1,47 @@
+html,
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  line-height: 1.8rem;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.middle::-webkit-scrollbar {
+  display: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  text-decoration: none;
+}
+
+.App {
+  display: flex;
+}
+
+.left {
+  flex: 15vw;
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+}
+
+.middle {
+  flex: 70vw;
+
+  overflow: auto;
+}
+
+.right {
+  flex: 15vw;
+  position: sticky;
+  top: 0;
+  right: 0;
+  height: 100%;
+  bottom: 0;
+}

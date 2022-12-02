@@ -1,0 +1,270 @@
+.hero {
+  &__div {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(29, 32, 51, 1) 0%,
+        rgba(29, 32, 51, 0.4) 49%,
+        rgba(29, 32, 51, 0.4) 52%,
+        rgba(29, 32, 51, 1) 98%
+      ),
+      url(../../assets/image-28.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -5%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50rem;
+    padding-bottom: 12rem;
+  }
+
+  &__top {
+    padding-top: 7%;
+    padding-left: 1rem;
+    color: white;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1.5rem;
+    border-bottom: 2px solid #343647;
+    padding-bottom: 1rem;
+  }
+
+  &__title {
+    margin-bottom: 0;
+    padding-right: 0.5rem;
+  }
+
+  &__overview {
+    color: black;
+    background-color: white;
+    padding: 0.4rem 0.8rem;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 11px;
+    margin-right: 0.8rem;
+  }
+
+  &__add-on {
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  &__release {
+    background-color: rgba(20, 23, 36, 0.8);
+    height: fit-content;
+    align-self: flex-end;
+    justify-content: space-between;
+    display: flex;
+    width: 25%;
+    margin-right: 1.5rem;
+    border-radius: 12px;
+    font-size: 12px;
+    padding: 0.3rem 0;
+
+    &-label {
+      color: #7f7d87;
+      padding-left: 1rem;
+    }
+
+    &-date {
+      color: white;
+      padding-right: 1rem;
+      font-weight: bold;
+    }
+  }
+}
+
+.purchase {
+  display: flex;
+  background-color: rgba(20, 23, 36, 0.8);
+  border-radius: 12px;
+  margin-left: 1rem;
+  width: 37rem;
+
+  &__game-cover {
+    height: 100%;
+  }
+
+  &__right {
+    width: 100%;
+    margin: 0 0.5rem;
+  }
+
+  &__radio-top,
+  &__radio-bottom {
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+
+  &__radio {
+    margin-right: 0.5rem;
+    margin-top: 0;
+    border: 1px solid #85848d;
+    width: 1rem;
+    height: 1rem;
+    accent-color: white;
+    background: none;
+  }
+
+  &__wishlist {
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 5.5rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    background: none;
+    border: 2px solid #1c48a5;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &:active {
+      border: 2px solid white;
+    }
+  }
+
+  &__select {
+    padding: 0.3rem 0.7rem;
+    font-size: 10px;
+    background-color: #276afc;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    margin-top: 5.5rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 0;
+    padding-top: 1.5rem;
+  }
+
+  &__middle {
+    flex: 1 1 0;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1rem;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1 0;
+    padding-top: 1rem;
+    border-top: 2px solid #343647;
+  }
+}
+
+.price {
+  &__label {
+    margin: 0;
+    padding-right: 1rem;
+
+    font-size: 10px;
+    color: #7f7d87;
+    line-height: 0.5;
+    text-align: right;
+  }
+
+  &__amount {
+    margin: 0;
+    font-size: 14px;
+    color: white;
+  }
+}
+
+.videos {
+  &__div {
+    margin-top: -13%;
+    background: linear-gradient(
+      to bottom,
+      rgba(29, 32, 51, 0) 3%,
+      rgba(29, 32, 51, 0.65) 55%,
+      rgba(29, 32, 51, 1) 71%,
+      rgba(29, 32, 51, 1) 95%
+    );
+    padding-bottom: 2.5rem;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__forward {
+    margin: 0 1rem;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border: 2px solid grey;
+    background: none;
+    border-radius: 4px;
+  }
+
+  &__back {
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(50, 52, 69);
+    color: rgb(109, 109, 120);
+    height: 25px;
+    width: 25px;
+  }
+
+  &__item {
+    flex: 1 1 0;
+    padding: 0 1.5rem;
+  }
+}
+
+.screenshots__label {
+  color: white;
+  font-size: 19px;
+}
+
+.screenshots__link {
+  color: #4e7feb;
+  font-size: 0.8rem;
+  line-height: 0.25;
+  padding-left: 0.5rem;
+}
+
+.wishlist__icon {
+  padding-right: 0.25rem;
+}
+
+.radio__label {
+  font-size: 14px;
+}
+
+.radio__logo {
+  padding-top: 0.5rem;
+}
+
+.stars {
+  padding-left: 0.5rem;
+}
+
+.month {
+  padding-right: 1rem;
+}
