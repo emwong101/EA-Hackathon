@@ -1,13 +1,19 @@
-import "./App.css";
-import { Home } from "./pages/home/Home";
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.scss";
+import Header from "./components/header/Header";
+import Hero from "./components/hero/Hero";
+import SingleGameHero from "./components/singleGameHero/SingleGameHero";
+import Rightbar from "./components/rightbar/Rightbar";
+
 
 function App() {
-	return (
-		<>
-			<Home />
-		</>
-	);
+  return (
+    <div className="App">
+      <Header />
+      <SingleGameHero />
+      <Hero />
+      <Rightbar />
+    </div>
+  );
 }
 
 export default App;
