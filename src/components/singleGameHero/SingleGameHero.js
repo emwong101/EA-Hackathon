@@ -4,6 +4,10 @@ import Stars from "../../assets/review_stars.png";
 import Cover from "../../assets/fifa-game-cover.png";
 import EA from "../../assets/EA-Play-Logo.png";
 import like from "../../assets/like.png";
+import screenshot1 from "../../assets/photo1.png";
+import screenshot2 from "../../assets/photo2.png";
+import video1 from "../../assets/video1.png";
+import video2 from "../../assets/video2.png";
 
 function SingleGameHero() {
   return (
@@ -45,7 +49,6 @@ function SingleGameHero() {
                   <img src={like} className="wishlist__icon"></img>
                   ADD TO WISHLIST
                 </button>
-
                 <input
                   type="button"
                   className="purchase__select"
@@ -77,6 +80,23 @@ function SingleGameHero() {
             <p className="hero__release-label">Release date</p>
             <p className="hero__release-date">2022-09-30</p>
           </div>
+        </div>
+      </div>
+      <div className="videos__div">
+        <div className="videos__top">
+          <h3 className="screenshots__label">
+            Screenshots & videos <a className="screenshots__link">View all</a>
+          </h3>
+          <div className="videos__buttons">
+            <input type="button" className="videos__back" value="<"></input>
+            <input type="button" value=">" className="videos__forward"></input>
+          </div>
+        </div>
+        <div className="videos__bottom">
+          <img className="videos__item" src={video1}></img>
+          <img className="videos__item" src={video2}></img>
+          <img className="videos__item" src={screenshot1}></img>
+          <img className="videos__item" src={screenshot2}></img>
         </div>
       </div>
     </>
