@@ -15,7 +15,7 @@ function Rightbar() {
             <img className="rightbar__user-avatar" src={friendOnline} />
           </div>
           <div className="rightbar__user-name">
-            <p>hy7fespo015x</p>
+            <p className="rightbar__user-name-first">Filmmaster2003</p>
           </div>
         </div>
         <div>
@@ -28,8 +28,8 @@ function Rightbar() {
           <div className="rightbar__friendsbar-text">
             <p>Friends</p>
           </div>
-          <div className="rrightbar__friendsbar-number">
-            <p>1/3</p>
+          <div className="rightbar__friendsbar-number">
+            <p className="rightbar__number">1/3</p>
           </div>
         </div>
         <div>
@@ -43,7 +43,7 @@ function Rightbar() {
             <img className="rightbar__frienduser-avatar" src={friendOnline} />
           </div>
           <div className="rightbar__frienduser-name">
-            <p>ly7fjkpo789x</p>
+            <p className="rightbar__user-name">CountChocula</p>
           </div>
         </div>
         <div>
@@ -57,12 +57,10 @@ function Rightbar() {
             <img className="rightbar__frienduser-avatar" src={friendOffline} />
           </div>
           <div className="rightbar__frienduser-name">
-            <p>oefodx9ohyu3</p>
+            <p className="rightbar__user-name">ronaldo_fan</p>
           </div>
         </div>
-        <div>
-          <img className="rightbar__user-downChevron" src={newChip} />
-        </div>
+        <div></div>
       </div>
       <div className="rightbar__friends">
         <div className="rightbar__friends-right">
@@ -70,12 +68,10 @@ function Rightbar() {
             <img className="rightbar__frienduser-avatar" src={friendOffline} />
           </div>
           <div className="rightbar__frienduser-name">
-            <p>0si5ny02onhe</p>
+            <p className="rightbar__user-name">guch_world</p>
           </div>
         </div>
-        <div>
-          <img className="rightbar__user-downChevron" src={newChip} />
-        </div>
+        <div></div>
       </div>
     </div>
   );

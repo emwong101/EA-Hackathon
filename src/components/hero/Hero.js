@@ -15,7 +15,7 @@ function Hero() {
             Members can try Need for Speed Unbound for 10 full hours
           </p>
         </div>
-        <input className="hero__button" type="button" value="Join"></input>
+        <input className="hero__button" type="button" value="JOIN"></input>
       </div>
       <div className="hero__list">
         <div className="list__item">

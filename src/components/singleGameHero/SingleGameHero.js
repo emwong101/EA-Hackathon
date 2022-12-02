@@ -1,5 +1,5 @@
 import "./SingleGameHero.scss";
-import React from "react";
+import React, { useState } from "react";
 import Stars from "../../assets/review_stars.png";
 import Cover from "../../assets/fifa-game-cover.png";
 import EA from "../../assets/EA-Play-Logo.png";
@@ -8,8 +8,15 @@ import screenshot1 from "../../assets/photo1.png";
 import screenshot2 from "../../assets/photo2.png";
 import video1 from "../../assets/video1.png";
 import video2 from "../../assets/video2.png";
+import Modal from "../../assets/modal.png";
 
 function SingleGameHero() {
+  const [clicked, setClicked] = useState(false);
+
+  const handleClick = (e) => {
+    setClicked(true);
+    setTimeout(setClicked, 2000);
+  };
   return (
     <>
       <div className="hero__div">
@@ -44,8 +51,11 @@ function SingleGameHero() {
                   <h5 className="price__amount">$53.99</h5>
                 </div>
               </div>
+              <div className={`modal ${clicked ? "modal-show" : ""}`}>
+                <img src={Modal}></img>
+              </div>
               <div className="purchase__middle">
-                <button className="purchase__wishlist">
+                <button className="purchase__wishlist" onClick={handleClick}>
                   <img src={like} className="wishlist__icon"></img>
                   ADD TO WISHLIST
                 </button>
