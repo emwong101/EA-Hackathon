@@ -1,0 +1,17 @@
+.card {
+  display: flex;
+  color: white;
+  margin: 0 1rem;
+  border-radius: 17px;
+  text-align: left;
+  align-items: center;
+  background-color: #141724;
+
+  &__right {
+    padding: 0 1rem;
+  }
+
+  &__photo {
+    min-height: 100%;
+  }
+}
