@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+
+  &__left {
+    display: flex;
+  }
+
+  &__back {
+    margin: 0 1rem;
+  }
+
+  &__forward {
+    margin-right: 1rem;
+  }
+}
+
+.search-icon {
+  max-width: 12px;
+  position: absolute;
+  left: 7rem;
+  padding-top: 0.3rem;
+}
