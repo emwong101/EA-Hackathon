@@ -1,13 +1,14 @@
 .main {
-	background-color: #1d2033;
-	padding: 2rem;
+  background-color: #1d2033;
+  padding: 2rem;
+  flex-shrink: 2;
 }
 
 .home-box {
-	display: flex;
-	color: #fefefe;
+  display: flex;
+  color: #fefefe;
 }
 
 .game-bottom {
-	display: flex;
+  display: flex;
 }

@@ -2,8 +2,9 @@ import "./App.scss";
 import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
 import SingleGameHero from "./components/singleGameHero/SingleGameHero";
+import Main from "./pages/home/main";
 import Rightbar from "./components/rightbar/Rightbar";
-import { GameList } from "./components/gameList/GameList";
+import { Home } from "./pages/home/Home";
 import { Nav } from "./components/nav/Nav";
 
 function App() {
@@ -13,9 +14,7 @@ function App() {
         <Nav />
       </div>
       <div className="middle">
-        <Header />
-        <SingleGameHero />
-        <GameList />
+        <Main />
       </div>
       <div className="right">
         <Rightbar />
