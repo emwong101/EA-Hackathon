@@ -9,7 +9,11 @@ function Header() {
         <input type="button" className="header__back" value="<"></input>
         <input type="button" value=">" className="header__forward"></input>
         <img className="search-icon" src={searchIcon} />
-        <input type="text" className="header__search"></input>
+        <input
+          type="text"
+          placeholder="Search games and add-ons"
+          className="header__search"
+        ></input>
       </div>
 
       <input

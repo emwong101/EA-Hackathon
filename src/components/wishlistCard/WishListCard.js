@@ -2,25 +2,24 @@ import "./WishListCard.scss";
 import React from "react";
 import noTick from "../../assets/icons/emptytick.svg";
 import eaPlay from "../../assets/icons/eaplay.svg";
-import wildHearts from "../../assets/wishlist/wildhearts.svg";
+
 import blueTick from "../../assets/wishlist/bluetick.svg";
 import rank from "../../assets/wishlist/rank.svg";
 import selectButton from "../../assets/wishlist/select.svg";
 import heart from "../../assets/wishlist/heart.svg";
-import fifa2023 from "../../assets/wishlist/fifa2023.svg";
 
-function WishListCard() {
+function WishListCard({ Image, title }) {
   return (
     <>
       <div className="card">
         <div className="card__img">
-          <img className="card__img-image" src={fifa2023} />
+          <img className="card__img-image" src={Image} />
         </div>
         <div className="card__details">
           <div className="card__details-top">
             <div className="card__details-top-left">
               <div className="card__details-top-left1">
-                <div className="card__details-top-left1-title">FIFA 2023</div>
+                <div className="card__details-top-left1-title">{title}</div>
                 <div className="card__details-top-left1-stars">
                   <img
                     className="card__details-top-left1-stars-img"
@@ -41,6 +40,7 @@ function WishListCard() {
                 <div className="card__details-top-left-buy-game">Buy Game</div>
               </div>
             </div>
+
             <div className="card__details-top-right">
               <div className="card__details-top-right-text">
                 <div className="card__details-top-right-top">Starting at</div>

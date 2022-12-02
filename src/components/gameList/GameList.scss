@@ -1,66 +1,66 @@
 .game-list {
-	display: flex;
-	flex-direction: column;
-	padding: 1rem;
-	cursor: pointer;
-	position: relative;
-	font-family: Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  cursor: pointer;
+  position: relative;
+  font-family: Verdana, sans-serif;
 
-	&_title {
-		font-size: 11px;
-		width: 12rem;
-		font-weight: 700;
-	}
+  &_title {
+    font-size: 11px;
+    width: 12rem;
+    font-weight: 700;
+  }
 
-	&_price {
-		font-size: 11px;
-		font-weight: 700;
-	}
+  &_price {
+    font-size: 11px;
+    font-weight: 700;
+  }
 
-	&_discount {
-		font-weight: 400;
-		font-size: 9px;
-		background-color: #00ff84;
-		border-radius: 20px;
-		padding: 0.125rem 0.4375rem;
-		margin-right: 0.3rem;
-		color: black;
-	}
-	&_img {
-		width: 12rem;
-		height: 12rem;
+  &_discount {
+    font-weight: 400;
+    font-size: 9px;
+    background-color: #00ff84;
+    border-radius: 20px;
+    padding: 0.125rem 0.4375rem;
+    margin-right: 0.3rem;
+    color: black;
+  }
+  &_img {
+    width: 12rem;
+    height: 12rem;
 
-		&:hover {
-			transform: scale(105%);
-			transition: ease-in-out 0.3s;
-		}
+    &:hover {
+      transform: scale(105%);
+      transition: ease-in-out 0.3s;
+    }
 
-		&:active {
-			transform: scale(95%);
-			transition-duration: 150ms;
-		}
-	}
+    &:active {
+      transform: scale(95%);
+      transition-duration: 150ms;
+    }
+  }
 }
 
 .like {
-	mask: url(../../assets/like.png) no-repeat;
-	background-color: white;
-	width: 18px;
-	height: 16px;
-	position: absolute;
-	right: 0;
-	margin-right: 2rem;
-	margin-top: 0.75rem;
+  mask: url(../../assets/like.png) no-repeat;
+  background-color: white;
+  width: 18px;
+  height: 16px;
+  position: absolute;
+  right: 0;
+  margin-right: 2rem;
+  margin-top: 0.75rem;
 
-	&:hover {
-		mask: url(../../assets/heart-solid.svg) no-repeat;
-		width: 18px;
-		height: 18px;
-		background-color: red;
-	}
+  &:hover {
+    mask: url(../../assets/heart-solid.svg) no-repeat;
+    width: 18px;
+    height: 18px;
+    background-color: white;
+  }
 }
 
 .on {
-	mask: url(../../assets/heart-solid.svg) no-repeat;
-	background-color: white;
+  mask: url(../../assets/heart-solid.svg) no-repeat;
+  background-color: white;
 }

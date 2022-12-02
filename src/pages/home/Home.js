@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { GameList } from "../../components/gameList/GameList.js";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import sims from "../../assets/games/sims.svg";
 import game4 from "../../assets/games/game4.png";
 import game5 from "../../assets/games/game5.png";
@@ -30,249 +30,197 @@ import rightChevron from "../../assets/icons/smrightchevron.png";
 import "./Home.scss";
 
 export const Home = () => {
-	return (
-		<div className="home-box">
-			<main className="main">
-				<div className="game-top">
-					<h3 className="game-title">
-						What your friends are playing this month
-					</h3>
-					<div className="img-box">
-						<img
-							className="game-icon"
-							src={leftChevron}
-							alt="left"
-						/>
-						<img
-							className="game-icon"
-							src={rightChevron}
-							alt="right"
-						/>
-					</div>
-				</div>
-				<div className="game-bottom">
-					<GameList
-						img={sims}
-						title={"The Sims 4"}
-						price={"Free"}
-					/>
-					<GameList
-						img={game16}
-						title={"Need for Speed Unbound"}
-						price={"&89.99"}
-					/>
-					<GameList
-						img={game4}
-						title={"Madden NFL 23"}
-						discount={"-50%"}
-						price={"$39.99"}
-					/>
-					<GameList
-						img={game5}
-						title={"It takes Two"}
-						discount={"-60%"}
-						price={"$21.99"}
-					/>
-					{/* <Link to="/FIFA"> */}
-					<div className="fifa-box">
-						<GameList
-							img={game6}
-							title={"FIFA 23"}
-							discount={"-40%"}
-							price={"$53.99"}
-						/>
-					</div>
-					{/* </Link> */}
-				</div>
-				<div className="game-top">
-					<h3 className="game-title">Top games in Canada this week: </h3>
-					<div className="img-box">
-						<img
-							className="game-icon"
-							src={leftChevron}
-							alt="left"
-						/>
-						<img
-							className="game-icon"
-							src={rightChevron}
-							alt="right"
-						/>
-					</div>
-				</div>
-				<div className="game-bottom">
-					<GameList
-						img={game7}
-						title={"Titanfall 2"}
-						discount={"-80%"}
-						price={"$5.39"}
-					/>
-					<GameList
-						img={game9}
-						title={"The Sims 4"}
-						price={"Free"}
-					/>
-					<GameList
-						img={game8}
-						title={"Need for Speed Hot Pursuit Remastered"}
-						discount={"-90%"}
-						price={"$3.99"}
-					/>
-					<GameList
-						img={game11}
-						title={"MASS EFFECT LEGENDARY DEITION"}
-						discount={"-67%"}
-						price={"$26.39"}
-					/>
-					<GameList
-						img={game12}
-						title={"Dead Space (2008)"}
-						discount={"-40%"}
-						price={"$53.99"}
-					/>
-				</div>
-				<div className="game-top">
-					<h3 className="game-title">For the Star Wars &trade; Squad: </h3>
-					<div className="img-box">
-						<img
-							className="game-icon"
-							src={leftChevron}
-							alt="left"
-						/>
-						<img
-							className="game-icon"
-							src={rightChevron}
-							alt="right"
-						/>
-					</div>
-				</div>
-				<div className="game-bottom">
-					<GameList
-						img={game17}
-						title={"STAR WARS Squadrons"}
-						price={"$54.99"}
-					/>
-					<GameList
-						img={game18}
-						title={"STAR WARS Battlefront II"}
-						discount={"-75%"}
-						price={"$6.74"}
-					/>
-					<GameList
-						img={game19}
-						title={"STAR WARS Battlefront II"}
-						discount={"-85%"}
-						price={"$8.24"}
-					/>
-					<GameList
-						img={game20}
-						title={"Plants vs Zombies Garden Warfare"}
-						discount={"-75%"}
-						price={"$4.99"}
-					/>
-					<GameList
-						img={game11}
-						title={"Mass Effect Legendary Edition"}
-						discount={"-67%"}
-						price={"$26.39"}
-					/>
-				</div>
-				<div className="game-top">
-					<h3 className="game-title">
-						Because You're a Need for Speed &trade; fanatic:
-					</h3>
-					<div className="img-box">
-						<img
-							className="game-icon"
-							src={leftChevron}
-							alt="left"
-						/>
-						<img
-							className="game-icon"
-							src={rightChevron}
-							alt="right"
-						/>
-					</div>
-				</div>
-				<div className="game-bottom">
-					<GameList
-						img={game16}
-						title={"Need for Speed Unbound"}
-						price={"$89.99"}
-					/>
-					<GameList
-						img={game13}
-						title={"Need for Speed payback"}
-						price={"&89.99"}
-					/>
-					<GameList
-						img={game15}
-						title={"Need for Speed most wanted"}
-						discount={"-40%"}
-						price={"$89.99"}
-					/>
-					<GameList
-						img={game14}
-						title={"Need for Speed Hot Pursuit Remastered"}
-						discount={"-90%"}
-						price={"$3.99"}
-					/>
-					<GameList
-						img={game15}
-						title={"Need for Speed Heat"}
-						discount={"-40%"}
-						price={"$89.99"}
-					/>
-				</div>
-				<div className="game-top">
-					<h3 className="game-title">Your friend group's all-time faves: </h3>
-					<div className="img-box">
-						<img
-							className="game-icon"
-							src={leftChevron}
-							alt="left"
-						/>
-						<img
-							className="game-icon"
-							src={rightChevron}
-							alt="right"
-						/>
-					</div>
-				</div>
-				<div className="game-bottom">
-					<GameList
-						img={game21}
-						title={"The Sims 4"}
-						price={"Free"}
-					/>
-					<GameList
-						header={"Classics"}
-						img={game22}
-						title={"Need for Speed Unbound"}
-						price={"&89.99"}
-					/>
-					<GameList
-						header={"Action"}
-						img={game25}
-						title={"Madden NFL 23"}
-						discount={"-50%"}
-						price={"$39.99"}
-					/>
-					<GameList
-						header={"Sports & racing"}
-						img={game23}
-						title={"It takes Two"}
-						discount={"-60%"}
-						price={"$21.99"}
-					/>
-					<GameList
-						header={"Old but good"}
-						img={game24}
-						title={"FIFA 23"}
-						discount={"-40%"}
-						price={"$53.99"}
-					/>
-				</div>
-			</main>
-		</div>
-	);
+  return (
+    <div className="home-box">
+      <main className="main">
+        <div className="game-top">
+          <h3 className="game-title">
+            What your friends are playing this month
+          </h3>
+          <div className="img-box">
+            <img className="game-icon" src={leftChevron} alt="left" />
+            <img className="game-icon" src={rightChevron} alt="right" />
+          </div>
+        </div>
+        <div className="game-bottom">
+          <GameList img={sims} title={"The Sims 4"} price={"Free"} />
+          <GameList
+            img={game16}
+            title={"Need for Speed Unbound"}
+            price={"&89.99"}
+          />
+          <GameList
+            img={game4}
+            title={"Madden NFL 23"}
+            discount={"-50%"}
+            price={"$39.99"}
+          />
+          <GameList
+            img={game5}
+            title={"It takes Two"}
+            discount={"-60%"}
+            price={"$21.99"}
+          />
+          <Link to="/FIFA">
+            <div className="fifa-box">
+              <GameList
+                img={game6}
+                title={"FIFA 23"}
+                discount={"-40%"}
+                price={"$53.99"}
+              />
+            </div>
+          </Link>
+        </div>
+        <div className="game-top">
+          <h3 className="game-title">Top games in Canada this week: </h3>
+          <div className="img-box">
+            <img className="game-icon" src={leftChevron} alt="left" />
+            <img className="game-icon" src={rightChevron} alt="right" />
+          </div>
+        </div>
+        <div className="game-bottom">
+          <GameList
+            img={game7}
+            title={"Titanfall 2"}
+            discount={"-80%"}
+            price={"$5.39"}
+          />
+          <GameList img={game9} title={"The Sims 4"} price={"Free"} />
+          <GameList
+            img={game8}
+            title={"Need for Speed Hot Pursuit Remastered"}
+            discount={"-90%"}
+            price={"$3.99"}
+          />
+          <GameList
+            img={game11}
+            title={"MASS EFFECT LEGENDARY DEITION"}
+            discount={"-67%"}
+            price={"$26.39"}
+          />
+          <GameList
+            img={game12}
+            title={"Dead Space (2008)"}
+            discount={"-40%"}
+            price={"$53.99"}
+          />
+        </div>
+        <div className="game-top">
+          <h3 className="game-title">For the Star Wars &trade; Squad: </h3>
+          <div className="img-box">
+            <img className="game-icon" src={leftChevron} alt="left" />
+            <img className="game-icon" src={rightChevron} alt="right" />
+          </div>
+        </div>
+        <div className="game-bottom">
+          <GameList
+            img={game17}
+            title={"STAR WARS Squadrons"}
+            price={"$54.99"}
+          />
+          <GameList
+            img={game18}
+            title={"STAR WARS Battlefront II"}
+            discount={"-75%"}
+            price={"$6.74"}
+          />
+          <GameList
+            img={game19}
+            title={"STAR WARS Battlefront II"}
+            discount={"-85%"}
+            price={"$8.24"}
+          />
+          <GameList
+            img={game20}
+            title={"Plants vs Zombies Garden Warfare"}
+            discount={"-75%"}
+            price={"$4.99"}
+          />
+          <GameList
+            img={game11}
+            title={"Mass Effect Legendary Edition"}
+            discount={"-67%"}
+            price={"$26.39"}
+          />
+        </div>
+        <div className="game-top">
+          <h3 className="game-title">
+            Because You're a Need for Speed &trade; fanatic:
+          </h3>
+          <div className="img-box">
+            <img className="game-icon" src={leftChevron} alt="left" />
+            <img className="game-icon" src={rightChevron} alt="right" />
+          </div>
+        </div>
+        <div className="game-bottom">
+          <GameList
+            img={game16}
+            title={"Need for Speed Unbound"}
+            price={"$89.99"}
+          />
+          <GameList
+            img={game13}
+            title={"Need for Speed payback"}
+            price={"&89.99"}
+          />
+          <GameList
+            img={game15}
+            title={"Need for Speed most wanted"}
+            discount={"-40%"}
+            price={"$89.99"}
+          />
+          <GameList
+            img={game14}
+            title={"Need for Speed Hot Pursuit Remastered"}
+            discount={"-90%"}
+            price={"$3.99"}
+          />
+          <GameList
+            img={game15}
+            title={"Need for Speed Heat"}
+            discount={"-40%"}
+            price={"$89.99"}
+          />
+        </div>
+        <div className="game-top">
+          <h3 className="game-title">Your friend group's all-time faves: </h3>
+          <div className="img-box">
+            <img className="game-icon" src={leftChevron} alt="left" />
+            <img className="game-icon" src={rightChevron} alt="right" />
+          </div>
+        </div>
+        <div className="game-bottom">
+          <GameList img={game21} title={"The Sims 4"} price={"Free"} />
+          <GameList
+            header={"Classics"}
+            img={game22}
+            title={"Need for Speed Unbound"}
+            price={"&89.99"}
+          />
+          <GameList
+            header={"Action"}
+            img={game25}
+            title={"Madden NFL 23"}
+            discount={"-50%"}
+            price={"$39.99"}
+          />
+          <GameList
+            header={"Sports & racing"}
+            img={game23}
+            title={"It takes Two"}
+            discount={"-60%"}
+            price={"$21.99"}
+          />
+          <GameList
+            header={"Old but good"}
+            img={game24}
+            title={"FIFA 23"}
+            discount={"-40%"}
+            price={"$53.99"}
+          />
+        </div>
+      </main>
+    </div>
+  );
 };
