@@ -40,6 +40,7 @@ function WishListCard({ Image, title }) {
                 <div className="card__details-top-left-buy-game">Buy Game</div>
               </div>
             </div>
+
             <div className="card__details-top-right">
               <div className="card__details-top-right-text">
                 <div className="card__details-top-right-top">Starting at</div>
