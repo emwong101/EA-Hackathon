@@ -29,7 +29,7 @@ function Rightbar() {
             <p>Friends</p>
           </div>
           <div className="rrightbar__friendsbar-number">
-            <p>1/4</p>
+            <p>1/3</p>
           </div>
         </div>
         <div>
