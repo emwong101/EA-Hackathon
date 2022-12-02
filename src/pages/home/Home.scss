@@ -1,14 +1,46 @@
 .main {
-  background-color: #1d2033;
-  padding: 2rem;
-  flex-shrink: 2;
+	background-color: #1d2033;
+	padding: 2rem;
+	flex-shrink: 2;
+	font-family: Helvetica, sans-serif;
 }
 
 .home-box {
-  display: flex;
-  color: #fefefe;
+	display: flex;
+	color: #fefefe;
+}
+
+.game-top {
+	width: 100%;
+	text-align: start;
+	padding: 0 1rem;
 }
 
 .game-bottom {
-  display: flex;
+	display: flex;
+}
+
+.fifa-box {
+	position: relative;
+}
+.wishlist-icon {
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+}
+
+.game-top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.game-icon {
+	padding: 0 5px;
+	cursor: pointer;
+}
+
+.game-title {
+	font-size: 14px;
+	font-weight: 700;
 }
