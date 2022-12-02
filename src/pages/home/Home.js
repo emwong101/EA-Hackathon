@@ -23,8 +23,10 @@ import game21 from "../../assets/games/game21.png";
 import game22 from "../../assets/games/game22.png";
 import game23 from "../../assets/games/game23.png";
 import game24 from "../../assets/games/game24.png";
-// import WishList from "../../assets/wishList.svg";
-// import WishListRed from "../../assets/wishListRed.svg";
+import game25 from "../../assets/games/games25.svg";
+import leftChevron from "../../assets/icons/smleftchevron.png";
+import rightChevron from "../../assets/icons/smrightchevron.png";
+
 import "./Home.scss";
 
 export const Home = () => {
@@ -32,9 +34,13 @@ export const Home = () => {
     <div className="home-box">
       <main className="main">
         <div className="game-top">
-          <h3 className="game-title">Top Games</h3>
-          <span className="game-icon"></span>
-          <span className="game-icon"></span>
+          <h3 className="game-title">
+            What your friends are playing this month
+          </h3>
+          <div className="img-box">
+            <img className="game-icon" src={leftChevron} alt="left" />
+            <img className="game-icon" src={rightChevron} alt="right" />
+          </div>
         </div>
         <div className="game-bottom">
           <GameList img={sims} title={"The Sims 4"} price={"Free"} />
@@ -67,9 +73,11 @@ export const Home = () => {
           </Link>
         </div>
         <div className="game-top">
-          <h3 className="game-title">Classics</h3>
-          <span className="game-icon"></span>
-          <span className="game-icon"></span>
+          <h3 className="game-title">Top games in Canada this week: </h3>
+          <div className="img-box">
+            <img className="game-icon" src={leftChevron} alt="left" />
+            <img className="game-icon" src={rightChevron} alt="right" />
+          </div>
         </div>
         <div className="game-bottom">
           <GameList
@@ -99,9 +107,11 @@ export const Home = () => {
           />
         </div>
         <div className="game-top">
-          <h3 className="game-title">Action</h3>
-          <span className="game-icon"></span>
-          <span className="game-icon"></span>
+          <h3 className="game-title">For the Star Wars &trade; Squad: </h3>
+          <div className="img-box">
+            <img className="game-icon" src={leftChevron} alt="left" />
+            <img className="game-icon" src={rightChevron} alt="right" />
+          </div>
         </div>
         <div className="game-bottom">
           <GameList
@@ -135,9 +145,13 @@ export const Home = () => {
           />
         </div>
         <div className="game-top">
-          <h3 className="game-title">Sports & racing</h3>
-          <span className="game-icon"></span>
-          <span className="game-icon"></span>
+          <h3 className="game-title">
+            Because You're a Need for Speed &trade; fanatic:
+          </h3>
+          <div className="img-box">
+            <img className="game-icon" src={leftChevron} alt="left" />
+            <img className="game-icon" src={rightChevron} alt="right" />
+          </div>
         </div>
         <div className="game-bottom">
           <GameList
@@ -170,9 +184,11 @@ export const Home = () => {
           />
         </div>
         <div className="game-top">
-          <h3 className="game-title">Old but good</h3>
-          <span className="game-icon"></span>
-          <span className="game-icon"></span>
+          <h3 className="game-title">Your friend group's all-time faves: </h3>
+          <div className="img-box">
+            <img className="game-icon" src={leftChevron} alt="left" />
+            <img className="game-icon" src={rightChevron} alt="right" />
+          </div>
         </div>
         <div className="game-bottom">
           <GameList img={game21} title={"The Sims 4"} price={"Free"} />
@@ -184,21 +200,21 @@ export const Home = () => {
           />
           <GameList
             header={"Action"}
-            img={game23}
+            img={game25}
             title={"Madden NFL 23"}
             discount={"-50%"}
             price={"$39.99"}
           />
           <GameList
             header={"Sports & racing"}
-            img={game24}
+            img={game23}
             title={"It takes Two"}
             discount={"-60%"}
             price={"$21.99"}
           />
           <GameList
             header={"Old but good"}
-            img={game10}
+            img={game24}
             title={"FIFA 23"}
             discount={"-40%"}
             price={"$53.99"}

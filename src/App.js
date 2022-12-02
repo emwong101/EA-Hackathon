@@ -4,6 +4,7 @@ import Rightbar from "./components/rightbar/Rightbar";
 import { Nav } from "./components/nav/Nav";
 import Game from "./pages/game/Game";
 import { Routes, Route } from "react-router-dom";
+import Wishlist from "./pages/wishlist/Wishlist";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/FIFA" element={<Game />} />
+          <Route path="/wishlist" element={<Wishlist />} />
         </Routes>
       </div>
       <div className="right">
