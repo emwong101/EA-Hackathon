@@ -1,0 +1,14 @@
+.nav {
+	&-box {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100vh;
+		background-color: darkblue;
+		color: white;
+	}
+
+	&-text {
+		font-size: 14px;
+	}
+}
