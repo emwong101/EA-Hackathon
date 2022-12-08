@@ -1,0 +1,555 @@
+commit 779377982d5c5e84eb6a112d8388c32040f10e78
+Merge: cfac83b 27eabfa
+Author: Emily W <110256938+emwong101@users.noreply.github.com>
+Date:   Fri Dec 2 14:08:26 2022 -0800
+
+    amended
+
+commit 27eabfa1c352fb12526c389bac3f72c3b1d86f27
+Merge: 773b339 cfac83b
+Author: emwong101 <emilywonglfa@gmail.com>
+Date:   Fri Dec 2 14:03:40 2022 -0800
+
+    finalized styling
+
+commit 773b3392c18e0d637eb0c16bfa1d99082c8abc69
+Merge: 835e0c9 b330b3c
+Author: emwong101 <emilywonglfa@gmail.com>
+Date:   Fri Dec 2 13:36:18 2022 -0800
+
+    styling fixes
+
+commit cfac83b675f7b9d5ad3b7a4b9d22137d3a0d5aa2
+Merge: b330b3c 67e885d
+Author: Emily W <110256938+emwong101@users.noreply.github.com>
+Date:   Fri Dec 2 13:35:55 2022 -0800
+
+    Merge pull request #13 from emwong101/feature/nanaya
+    
+    wishlist header
+
+commit 67e885ddcecde646d80b09181813132caa21c6fd
+Author: Nanaya Miki <nanayamiki@gmail.com>
+Date:   Fri Dec 2 13:34:29 2022 -0800
+
+    wishlist header
+
+M	src/App.js
+A	src/components/wishlistHeader/WishListHeader.js
+A	src/components/wishlistHeader/WishListHeader.scss
+
+commit 835e0c97a3cd57b8880558d9cba1018b3264f884
+Author: emwong101 <emilywonglfa@gmail.com>
+Date:   Fri Dec 2 13:06:01 2022 -0800
+
+    started routing
+
+M	package-lock.json
+M	package.json
+M	src/App.js
+M	src/index.js
+M	src/pages/home/Home.js
+M	src/pages/home/main.scss
+
+commit b330b3c951763ff823ac3dcf0da4b41d7a738105
+Merge: fcdeaec 77c97d5
+Author: Emily W <110256938+emwong101@users.noreply.github.com>
+Date:   Fri Dec 2 13:05:30 2022 -0800
+
+    Merge pull request #12 from emwong101/feature/su
+    
+    Feature/su
+
+commit 77c97d5a6cfe5fe1aa8d71507a80d8c5a6964d10
+Author: Su Shruthi <shruthacm@gmail.com>
+Date:   Fri Dec 2 12:57:41 2022 -0800
+
+    added wishlist card
+
+A	src/assets/icons/eaplay.svg
+A	src/assets/icons/emptytick.svg
+A	src/assets/wishlist/apex.svg
+A	src/assets/wishlist/bluetick.svg
+A	src/assets/wishlist/fifa2023.svg
+A	src/assets/wishlist/fifa22.svg
+A	src/assets/wishlist/heart.svg
+A	src/assets/wishlist/rank.svg
+A	src/assets/wishlist/select.svg
+A	src/assets/wishlist/wildhearts.svg
+A	src/components/wishlistCard/WishListCard.js
+A	src/components/wishlistCard/WishListCard.scss
+
+commit 195197aa972f7c75aeefcc3b2f2b1488fcca7009
+Merge: e2a832c fcdeaec
+Author: Su Shruthi <shruthacm@gmail.com>
+Date:   Fri Dec 2 12:57:15 2022 -0800
+
+    Merge branch 'dev' into feature/su
+
+commit 8c9342e7995667cadf9f08696277b257f9f70da9
+Author: emwong101 <emilywonglfa@gmail.com>
+Date:   Fri Dec 2 12:41:22 2022 -0800
+
+    styling fixes and added wishlist modal
+
+M	src/App.js
+A	src/assets/EA-play.png
+A	src/assets/fifa-trophy.png
+A	src/assets/info.png
+A	src/assets/modal.png
+M	src/assets/need-for-speed.png
+A	src/assets/overview.png
+A	src/assets/rest-of-single-game.png
+A	src/components/card/Card.js
+A	src/components/card/Card.scss
+A	src/components/gameInfo/GameInfo.js
+A	src/components/gameInfo/GameInfo.scss
+M	src/components/gameList/GameList.scss
+A	src/components/gameOverview/GameOverview.js
+A	src/components/gameOverview/GameOverview.scss
+A	src/components/gamePage/GamePage.js
+A	src/components/gamePage/GamePage.scss
+M	src/components/header/Header.js
+M	src/components/header/Header.scss
+M	src/components/hero/Hero.js
+M	src/components/hero/Hero.scss
+M	src/components/reviewcard/Reviewcard.scss
+M	src/components/rightbar/Rightbar.js
+M	src/components/rightbar/Rightbar.scss
+M	src/components/singleGameHero/SingleGameHero.js
+M	src/components/singleGameHero/SingleGameHero.scss
+A	src/pages/game/Game.js
+A	src/pages/game/Game.scss
+M	src/pages/home/main.scss
+
+commit fcdeaecd9c55e232cb563633b6b496577d7afc08
+Merge: be7aed8 775e3f2
+Author: Emily W <110256938+emwong101@users.noreply.github.com>
+Date:   Fri Dec 2 12:39:30 2022 -0800
+
+    Merge pull request #11 from emwong101/feature/nanaya
+    
+     fixed nav dl icon, added chevron on gamelist, re changed the titles
+
+commit 775e3f2458ef413f82f503077e2d71f8e08aaae9
+Author: Nanaya Miki <nanayamiki@gmail.com>
+Date:   Fri Dec 2 12:34:29 2022 -0800
+
+     fixed nav dl icon, added chevron on gamelist, re changed the titles
+
+M	src/assets/dm.svg
+A	src/assets/games/games25.svg
+A	src/assets/icons/smleftchevron.png
+A	src/assets/icons/smleftchevron.svg
+A	src/assets/icons/smrightchevron.png
+A	src/assets/icons/smrightchevron.svg
+M	src/components/gameList/GameList.js
+M	src/components/gameList/GameList.scss
+M	src/pages/home/Home.js
+M	src/pages/home/Home.scss
+
+commit be7aed887a2d8f3006a98bf943e53e0faa886d7a
+Merge: 2db3908 ac8a1d5
+Author: Emily W <110256938+emwong101@users.noreply.github.com>
+Date:   Fri Dec 2 09:28:10 2022 -0800
+
+    Merge pull request #10 from emwong101/feature/nanaya
+    
+    Feature/nanaya
+
+commit ac8a1d5218c048d25d47d419bf925909e6cc0b84
+Merge: 5cdda15 2db3908
+Author: Nanaya Miki <nanayamiki@gmail.com>
+Date:   Fri Dec 2 04:13:50 2022 -0800
+
+    merge conflict, state for the heart icon, text alignment
+
+commit 5cdda15833711f764a3eb1001fcbe2fbed0ef3e5
+Author: Nanaya Miki <nanayamiki@gmail.com>
+Date:   Fri Dec 2 03:26:13 2022 -0800
+
+    added hover effect, wishlist styling
+
+A	public/wishList.svg
+A	public/wishListRed.svg
+M	src/App.js
+A	src/assets/wishList.svg
+M	src/components/gameList/GameList.js
+M	src/components/gameList/GameList.scss
+M	src/components/nav/Nav.js
+M	src/components/nav/Nav.scss
+M	src/pages/home/Home.js
+M	src/pages/home/Home.scss
+
+commit 2db3908e7789dfe32cea5affe337c7dea6459c90
+Merge: 0150096 3f8a8c5
+Author: Emily W <110256938+emwong101@users.noreply.github.com>
+Date:   Fri Dec 2 03:19:43 2022 -0800
+
+    Merge pull request #6 from emwong101/feature/su
+
+commit e2a832c6f9ba9f64ea6a27f0e75cbc1b3d209fa8
+Merge: 3f8a8c5 0150096
+Author: Su Shruthi <shruthacm@gmail.com>
+Date:   Fri Dec 2 03:04:17 2022 -0800
+
+    Merge branch 'dev' into feature/su
+
+commit 0150096121263164aab5da8b78bec756a5e39d79
+Merge: e13696a a25faee
+Author: Emily W <110256938+emwong101@users.noreply.github.com>
+Date:   Fri Dec 2 02:58:04 2022 -0800
+
+    Merge pull request #7 from emwong101/feature/emily
+    
+    added like buttons and fixed layout template
+
+commit a25faee2cf8b6da830c54528fb5bd8d9b91aecf2
+Author: emwong101 <emilywonglfa@gmail.com>
+Date:   Fri Dec 2 02:57:23 2022 -0800
+
+    added like buttons and fixed layout template
+
+M	src/App.js
+M	src/App.scss
+A	src/assets/heart-solid.svg
+M	src/assets/like.png
+M	src/components/gameList/GameList.js
+M	src/components/gameList/GameList.scss
+M	src/components/hero/Hero.scss
+M	src/components/nav/Nav.scss
+M	src/pages/home/Home.js
+M	src/pages/home/Home.scss
+A	src/pages/home/main.js
+A	src/pages/home/main.scss
+
+commit 3f8a8c5fcdfe43232e56404267f75a7565fce1ce
+Author: Su Shruthi <shruthacm@gmail.com>
+Date:   Fri Dec 2 01:43:06 2022 -0800
+
+    ade changes in font-family of rightside bar
+
+M	src/components/rightbar/Rightbar.js
+M	src/components/rightbar/Rightbar.scss
+
+commit 102c774caf9ae10184dafe2a9456b5bd82cb4211
+Author: Su Shruthi <shruthacm@gmail.com>
+Date:   Fri Dec 2 01:33:54 2022 -0800
+
+    added reviewbar
+
+A	src/assets/icons/leftchevron.svg
+A	src/assets/icons/rightchevron.svg
+A	src/assets/icons/stars.svg
+A	src/components/reviewcard/Reviewcard.js
+A	src/components/reviewcard/Reviewcard.scss
+
+commit 89e35b376f5553347752e1ae118954e57b36a130
+Merge: 211213a e13696a
+Author: Nanaya Miki <nanayamiki@gmail.com>
+Date:   Fri Dec 2 01:27:42 2022 -0800
+
+    Merge branch 'dev' into feature/nanaya
+
+commit 211213abf7f93bc8db5c0a690bfab578d3a69b85
+Author: Nanaya Miki <nanayamiki@gmail.com>
+Date:   Fri Dec 2 01:26:26 2022 -0800
+
+    added some styling
+
+M	src/components/gameList/GameList.scss
+
+commit e13696a29ab166917bf2ffd8f0e588d2ed2e7d76
+Merge: d4934ed 60399dd
+Author: Emily W <110256938+emwong101@users.noreply.github.com>
+Date:   Fri Dec 2 00:55:38 2022 -0800
+
+    Merge pull request #5 from emwong101/feature/emily
+    
+    Feature/emily
+
+commit 60399dd682715ac07cc2a175bc6497fd7084e722
+Merge: 8a76c6d d4934ed
+Author: emwong101 <emilywonglfa@gmail.com>
+Date:   Fri Dec 2 00:54:10 2022 -0800
+
+    added layout
+
+commit d4934ed1109eebc543116f7366c12f71358d249f
+Merge: dc7d9b4 47780c6
+Author: Emily W <110256938+emwong101@users.noreply.github.com>
+Date:   Fri Dec 2 00:40:43 2022 -0800
+
+    Merge pull request #4 from emwong101/feature/nanaya
+    
+    Feature/nanaya
+
+commit 47780c679f7e417643bdc6267a6b5f10c8653f9d
+Merge: c800c20 7d8e6af
+Author: Nanaya Miki <nanayamiki@gmail.com>
+Date:   Fri Dec 2 00:36:08 2022 -0800
+
+    merged gameList
+
+commit 8a76c6d9946a8b1c5d2dcf80ac28df31dd051863
+Merge: ec659fc b79283a
+Author: emwong101 <emilywonglfa@gmail.com>
+Date:   Fri Dec 2 00:23:31 2022 -0800
+
+    pulled from remote
+
+commit ec659fceaee3697c289f199917d8e155a8745a85
+Author: emwong101 <emilywonglfa@gmail.com>
+Date:   Fri Dec 2 00:22:10 2022 -0800
+
+    completed hero section with screenshots and videos
+
+M	src/App.js
+A	src/assets/photo1.png
+A	src/assets/photo2.png
+A	src/assets/video1.png
+A	src/assets/video2.png
+M	src/components/singleGameHero/SingleGameHero.js
+M	src/components/singleGameHero/SingleGameHero.scss
+
+commit 7d8e6afa7a516de5667359a047ccedaedab4b74c
+Author: Nanaya Miki <nanayamiki@gmail.com>
+Date:   Fri Dec 2 00:16:21 2022 -0800
+
+    moved files from component to components
+
+R100	src/component/gameList/GameList.js	src/components/gameList/GameList.js
+R100	src/component/gameList/GameList.scss	src/components/gameList/GameList.scss
+R100	src/component/nav/Nav.js	src/components/nav/Nav.js
+R100	src/component/nav/Nav.scss	src/components/nav/Nav.scss
+M	src/pages/home/Home.js
+
+commit 1f406532c8bae320f51d6a51e7e609e159bec4a2
+Merge: 1760489 dc7d9b4
+Author: Nanaya Miki <nanayamiki@gmail.com>
+Date:   Fri Dec 2 00:12:28 2022 -0800
+
+    added gameList component
+
+commit c800c20d5e38260fb6340508c64cd511b223a54d
+Merge: 353b85a dc7d9b4
+Author: Nanaya Miki <nanayamiki@gmail.com>
+Date:   Fri Dec 2 00:06:52 2022 -0800
+
+    merge conflict
+
+commit 1760489270ba3942ba756c1e7c05c2300fe3273b
+Author: Nanaya Miki <nanayamiki@gmail.com>
+Date:   Fri Dec 2 00:02:21 2022 -0800
+
+    added gameList
+
+M	package-lock.json
+M	package.json
+M	src/App.js
+A	src/assets/browser.svg
+A	src/assets/collection.svg
+A	src/assets/dm.svg
+A	src/assets/games/game1.png
+A	src/assets/games/game10.png
+A	src/assets/games/game11.png
+A	src/assets/games/game12.png
+A	src/assets/games/game13.png
+A	src/assets/games/game14.png
+A	src/assets/games/game15.png
+A	src/assets/games/game16.png
+A	src/assets/games/game17.png
+A	src/assets/games/game18.png
+A	src/assets/games/game19.png
+A	src/assets/games/game2.png
+A	src/assets/games/game20.png
+A	src/assets/games/game21.png
+A	src/assets/games/game22.png
+A	src/assets/games/game23.png
+A	src/assets/games/game24.png
+A	src/assets/games/game3.png
+A	src/assets/games/game4.png
+A	src/assets/games/game5.png
+A	src/assets/games/game6.png
+A	src/assets/games/game7.png
+A	src/assets/games/game8.png
+A	src/assets/games/game9.png
+A	src/assets/games/sims.svg
+A	src/assets/home.svg
+A	src/component/gameList/GameList.js
+A	src/component/gameList/GameList.scss
+M	src/component/nav/Nav.js
+M	src/component/nav/Nav.scss
+M	src/pages/home/Home.js
+M	src/pages/home/Home.scss
+
+commit e21d60a60edd59f6b8db13571d7b277064d768fe
+Merge: 2b23182 e0fec09
+Author: emwong101 <emilywonglfa@gmail.com>
+Date:   Thu Dec 1 23:46:16 2022 -0800
+
+    merged dev
+
+commit dc7d9b4bd4a9938bca4f53cd110c7f27c9b98f50
+Merge: e0fec09 b79283a
+Author: Emily W <110256938+emwong101@users.noreply.github.com>
+Date:   Thu Dec 1 23:43:56 2022 -0800
+
+    Merge pull request #3 from emwong101/feature/emily
+    
+    Feature/emily
+
+commit b79283ad458aac077580f874b0201024db570e20
+Merge: 2b23182 e0fec09
+Author: Emily W <110256938+emwong101@users.noreply.github.com>
+Date:   Thu Dec 1 23:43:44 2022 -0800
+
+    Merge branch 'dev' into feature/emily
+
+commit 2b23182a7bfb072262512e98e309444d63bc8865
+Author: emwong101 <emilywonglfa@gmail.com>
+Date:   Thu Dec 1 23:34:28 2022 -0800
+
+    finished hero for individual game page
+
+M	src/App.js
+M	src/App.scss
+A	src/assets/EA-Play-Logo.png
+A	src/assets/fifa-game-cover.png
+A	src/assets/image-28.png
+A	src/assets/like.png
+A	src/assets/review_stars.png
+M	src/components/header/Header.scss
+A	src/components/singleGameHero/SingleGameHero.js
+A	src/components/singleGameHero/SingleGameHero.scss
+
+commit e0fec09242f2a309f9377bb4ac05aa6f621c4261
+Merge: 18e5ce4 23a984f
+Author: Emily W <110256938+emwong101@users.noreply.github.com>
+Date:   Thu Dec 1 22:27:39 2022 -0800
+
+    Merge pull request #2 from emwong101/feature/su
+    
+    added rightside bar
+
+commit 23a984f274cca424961908c7a9b4ca1fabfab667
+Author: Su Shruthi <shruthacm@gmail.com>
+Date:   Thu Dec 1 22:09:21 2022 -0800
+
+    added rightside bar
+
+M	src/App.js
+A	src/assets/icons/addfriend.svg
+A	src/assets/icons/downchevron.svg
+A	src/assets/icons/friendoffline.svg
+A	src/assets/icons/friendonline.svg
+A	src/assets/icons/newchip.svg
+A	src/components/rightbar/Rightbar.js
+A	src/components/rightbar/Rightbar.scss
+
+commit b48b99ed1ec4962a0993a9d03339e761c7d23b45
+Author: emwong101 <emilywonglfa@gmail.com>
+Date:   Thu Dec 1 19:59:28 2022 -0800
+
+    fixed header buttons
+
+M	src/components/header/Header.scss
+M	src/components/hero/Hero.scss
+
+commit 18e5ce48fab62cebf78abdf56c5610c4e5b512b0
+Merge: 96490e3 08b310b
+Author: Emily W <110256938+emwong101@users.noreply.github.com>
+Date:   Thu Dec 1 19:49:23 2022 -0800
+
+    Merge pull request #1 from emwong101/feature/emily
+    
+    Feature/emily
+
+commit 08b310b02117e78e602bb6247b7e91004185d189
+Author: emwong101 <emilywonglfa@gmail.com>
+Date:   Thu Dec 1 19:49:00 2022 -0800
+
+    adjusted styling
+
+D	.env
+M	src/assets/magnifying-glass-solid.svg
+M	src/components/header/Header.scss
+M	src/components/hero/Hero.scss
+
+commit 5a0b20f519071ab8836e0f48dee5bf98301c5870
+Author: emwong101 <emilywonglfa@gmail.com>
+Date:   Thu Dec 1 19:30:29 2022 -0800
+
+    created header and hero section
+
+A	.env
+M	.gitignore
+M	package-lock.json
+M	package.json
+D	src/App.css
+M	src/App.js
+A	src/App.scss
+D	src/App.test.js
+A	src/assets/apex-legends.png
+A	src/assets/fifa.png
+A	src/assets/magnifying-glass-solid.svg
+A	src/assets/need-for-speed.png
+A	src/assets/sims.png
+A	src/components/header/Header.js
+A	src/components/header/Header.scss
+A	src/components/hero/Hero.js
+A	src/components/hero/Hero.scss
+D	src/index.css
+M	src/index.js
+D	src/logo.svg
+D	src/reportWebVitals.js
+D	src/setupTests.js
+
+commit 353b85a252a9606e2b40de9f04e56fed0441bf35
+Author: Nanaya Miki <nanayamiki@gmail.com>
+Date:   Thu Dec 1 18:42:15 2022 -0800
+
+    added a folder, home
+
+M	src/App.js
+R060	src/pages/Home.js	src/pages/home/Home.js
+R100	src/pages/Home.scss	src/pages/home/Home.scss
+
+commit 103f01c5a454f826637880f22b5d528a77156b03
+Author: Nanaya Miki <nanayamiki@gmail.com>
+Date:   Thu Dec 1 18:26:14 2022 -0800
+
+    added nav
+
+M	package-lock.json
+M	package.json
+M	src/App.js
+A	src/component/nav/Nav.js
+A	src/component/nav/Nav.scss
+A	src/pages/Home.js
+A	src/pages/Home.scss
+
+commit 96490e3696549776e1a5fe547a19bdcdd38e4ef3
+Author: emwong101 <emilywonglfa@gmail.com>
+Date:   Thu Dec 1 17:07:41 2022 -0800
+
+    Initialize project using Create React App
+
+A	.gitignore
+A	README.md
+A	package-lock.json
+A	package.json
+A	public/favicon.ico
+A	public/index.html
+A	public/logo192.png
+A	public/logo512.png
+A	public/manifest.json
+A	public/robots.txt
+A	src/App.css
+A	src/App.js
+A	src/App.test.js
+A	src/index.css
+A	src/index.js
+A	src/logo.svg
+A	src/reportWebVitals.js
+A	src/setupTests.js
